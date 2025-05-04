@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 
 public class Yourage {
     public static void main(String[] args) {
@@ -14,32 +14,27 @@ public class Yourage {
         double days = age * 365;                     
         double hours = days * 24;                         
         double minutes = hours * 60;                      
-        double seconds = minutes * 60;                    
+        double seconds = minutes * 60;     
+ }
 
-        
-        
+	public static int computeSumOfNumber(int number) {
+	int num1 = (number / 1000) % 10;
+	int num2 = (number / 100) % 10;
+	int num3 = (number / 10) % 10;
+	int num4 = (number / 1) % 10;
 
-        System.out.println("age: " + age);
-       	
-	System.out.println("months: " + (age * 12) + " months");
-
-
-        System.out.printf("days: %.0f (age * 365)%n", days);
-
-        System.out.printf("hours: %.0f (days * 24)%n", hours);
-
-        System.out.printf("minutes: %.0f (hours * 60)%n", minutes);
-
-        System.out.printf("seconds: %.0f (minutes * 60)%n", seconds);
-
-        
-    }
-
+	int total = num1 + num2 + num3 + num4;
+	return total;
+}public static int findMultiple(int number) {
+	int result = number * 5;
+	return result;
 }
+               
 
+        
+        
 
-
-
+       
 
 
 
